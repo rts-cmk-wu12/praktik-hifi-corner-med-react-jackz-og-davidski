@@ -1,3 +1,4 @@
+import Footer from "../componets/footer"
 
 
 
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-<h1>hej</h1>
+<Footer/>
     </>
   )
 }
