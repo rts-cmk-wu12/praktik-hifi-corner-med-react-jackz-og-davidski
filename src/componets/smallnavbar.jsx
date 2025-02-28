@@ -1,7 +1,7 @@
 import { MdPlace } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 import { IoIosMail } from "react-icons/io";
-import "../styles/navbar.scss";
+import "../style/navbar.scss";
 
 export default function SmallNavBar() {
     return (

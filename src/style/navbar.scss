@@ -2,25 +2,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black; // Justér hvis baggrunden er en anden farve
-    padding: 5px 20px; // Justér padding efter behov
+    background-color: black;
+    padding: 5px 20px;
 }
 
 .smallnav-links {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 15px; // Afstand mellem ikonerne
+    gap: 15px;
 }
 
 .smallnav-links li {
-    color: white; // Farve på ikoner
-    font-size: 20px; // Størrelse på ikoner
+    color: white;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .subscribe-btn {
-    background-color: #0084ff; // Blå baggrund for subscribe-knap
+    background-color: #0084ff;
     color: white;
     font-size: 14px;
     padding: 5px 10px;
@@ -30,5 +30,5 @@
 }
 
 .subscribe-btn:hover {
-    background-color: #006edc; // Mørkere blå ved hover
+    background-color: #006edc;
 }
