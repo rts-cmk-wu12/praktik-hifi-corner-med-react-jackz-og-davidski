@@ -21,7 +21,7 @@
     grid-area: 1 / 1 / 2 / -1;
     overflow: hidden;
     order: 1;
-    height: 750px;
+    height: 850px;
 
     img {
         width: 80%;
@@ -41,7 +41,7 @@
 
 .caption {
     font-size: 30px;
-    color: var(--primary_hihglight);
+    color: #a39161;
     line-height: 1.6;
     align-self: end;
     width: 14.6em;
@@ -52,10 +52,11 @@
 
 #next, #back {
     grid-area: 1 / 1 / 2 / -1;
-    font-size: 4.5em;
+    font-size: 8em;
+
     margin: 0.5em;
     cursor: pointer;
-    color: var(--primary_hihglight);
+    color: #a39161;
     order: 3;
     transition: 0.3s;
 
@@ -70,6 +71,7 @@
 
 #next {
     justify-self: end;
+ 
 }
 
 #back {
