@@ -17,8 +17,8 @@ footer {
     display: flex;
     align-items: center;
     max-height: 200px;
-background-color: gold;
-justify-content: space-between;
+    background-color: #d4af37;
+    justify-content: space-between;
 }
 
 .border-right {
@@ -61,10 +61,11 @@ justify-content: space-between;
     color: white;
     border-radius: 50%;
     border: 1px solid white;
-  width: 55%;
-height:3.1REM;
+    width: 55%;
+    height: 3.1REM;
 }
-svg{
-width: 55%;
-height:3.1REM;
+
+svg {
+    width: 55%;
+    height: 3.1REM;
 }

@@ -1,6 +1,7 @@
 
 
 import SmallNavBar from "../componets/smallnavbar";
+import NavBar from "../componets/navbar";
 
 
 
@@ -12,9 +13,16 @@ function Test() {
 
         <>
             <header>
+                <img src="public/hifi_logo.svg" alt="Overlay Image" className="overlay-image" />
                 <SmallNavBar />
+                <NavBar />
             </header>
-            <h1>hej</h1>
+            <main>
+                <div className="">
+                    <img src="public/linje.jpg" alt="" />
+                </div>
+            </main>
+
         </>
     )
 }
