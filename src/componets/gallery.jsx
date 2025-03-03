@@ -6,10 +6,10 @@ import { GrFormPrevious } from "react-icons/gr";
 export default function Gallery() {
     const [current, setCurrent] = useState(0);
     const slides = [
-        { src: "/homecinema.jpg", alt: "Lorem ipsum" },
-        { src: "/amplifiers.jpg", alt: "Lorem ipsum20" },
-        { src: "/headphones.jpg", alt: "Lorem ipsum22" },
-        { src: "/speaker.jpg", alt: "halahala" },
+        { src: "/homecinema.jpg", alt: "Our Home cinema" },
+        { src: "/amplifiers.jpg", alt: "Our popular amplifiers" },
+        { src: "/headphones.jpg", alt: "Top rated headphones" },
+        { src: "/speaker.jpg", alt: "Our higest quality speakers" },
     ];
 
     const captionText = slides[current].alt;
