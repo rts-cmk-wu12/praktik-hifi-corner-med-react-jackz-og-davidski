@@ -4,6 +4,7 @@ import { GloabelContext } from "./globalContext";
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from './pages/App.jsx'
 import Test from './pages/test.jsx'
+import HifiShopFrontpage from "./pages/hifi-shop-frontpage.jsx";
 
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <Test />
+  },
+  {
+    path: "/hifi-shop-frontpage",
+    element: <HifiShopFrontpage />
   }
   // ,
   // {
