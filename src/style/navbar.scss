@@ -11,8 +11,22 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%; // Sørger for, at billedet ikke er for stort
-    height: auto;
+    max-width: 80%;
+    height: 200px;
+
+    display: grid;
+    margin: 0 auto;
+    width: 250px;
+    align-self: center;
+    margin-top: 50px;
+
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.overlay-image:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
 }
 
 .smallnavbar {
@@ -21,7 +35,7 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.603);
     padding: 5px 20px;
-    // background: url(public/beskaaret.jpg)
+
 }
 
 .smallnav-links {
@@ -81,4 +95,31 @@ header {
 
 .nav-links a:hover {
     color: #d4af37;
+}
+
+.wave-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 350px;
+        display: block;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
 }
