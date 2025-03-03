@@ -1,0 +1,84 @@
+header {
+    position: relative;
+    background: url(public/beskaaret.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; // Sørger for, at billedet ikke er for stort
+    height: auto;
+}
+
+.smallnavbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 5px 20px;
+    // background: url(public/beskaaret.jpg)
+}
+
+.smallnav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.smallnav-links li {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.subscribe-btn {
+    background-color: #0084ff;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.subscribe-btn:hover {
+    background-color: #006edc;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
