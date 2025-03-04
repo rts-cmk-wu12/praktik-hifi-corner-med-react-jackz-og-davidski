@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+ 
          <header>
                     <img src="hifi_logo.svg" alt="Overlay Image" className="overlay-image" />
                     <SmallNavBar />
@@ -35,4 +36,4 @@ function App() {
   )
 }
 
-export default App
+export default App 
