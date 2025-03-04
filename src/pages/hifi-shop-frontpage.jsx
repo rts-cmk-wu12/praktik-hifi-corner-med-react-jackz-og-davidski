@@ -6,15 +6,13 @@ import Footer from "../componets/footer"
 function HifiShopFrontpage() {
     return (
         <div>
-            <header>
-                <SmallNavBar />
-                <NavBar />
-            </header>
+            <SmallNavBar />
+            <NavBar />
             <ShopFrontImages />
 
-            <footer>
-                <Footer />
-            </footer>
+
+            <Footer />
+
         </div>
     );
 }

@@ -3,21 +3,21 @@ import "../style/shop-front.scss";
 
 export default function ShopFrontImages() {
     const products = [
-        { img: "Produktbilleder/int_forstaerkere/creek_a50I.jpg", alt: "creek", link: "/hifi-shop-category-list?category=amplifiers", text: "AMPLIFIERS" },
-        { img: "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg", alt: "debut", link: "/hifi-shop-category-list", text: "SHOP BY BRAND" },
-        { img: "Produktbilleder/hojtalere/epos_m5.gif", alt: "epos", link: "/hifi-shop-category-list?category=speakers", text: "SPEAKERS" },
-        { img: "Produktbilleder/effektforstaerkere/manley_mahi.jpg", alt: "mahi1", link: "/hifi-shop-category-list?category=turntables", text: "TURNTABLES" },
-        { img: "Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg", alt: "neoclassic300b", link: "/hifi-shop-category-list?category=cd-players", text: "CD PLAYERS" },
-        { img: "Produktbilleder/effektforstaerkere/parasound_haloa23.jpg", alt: "haloa23", link: "/hifi-shop-category-list?category=streamers", text: "STREAMERS" },
-        { img: "Produktbilleder/dvdafspillere/creek_classic.jpg", alt: "creekclassic", link: "/hifi-shop-category-list?category=cables", text: "CABLES" },
-        { img: "Produktbilleder/int_forstaerkere/manley_snapper.jpg", alt: "snapper", link: "/hifi-shop-category-list?category=furniture", text: "FURNITURE" },
-        { img: "Produktbilleder/hojtalere/epos_m5.gif", alt: "epos", link: "/hifi-shop-category-list?category=headphones", text: "HEADPHONES" },
-        { img: "Produktbilleder/hojtalere/harbeth_p3es2.jpg", alt: "p3es2", link: "/hifi-shop-category-list", text: "HOME CINEMA" },
-        { img: "Produktbilleder/cd_afspillere/creek_evo_cd.jpg", alt: "evo", link: "/hifi-shop-category-list", text: "OUTLET - SAVE UP TO 50%" },
-        { img: "Produktbilleder/hojtalere/epos_m5.gif", alt: "m5", link: "/hifi-shop-category-list", text: "EBAY SHOP" },
-        { img: "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg", alt: "rpm5", link: "/hifi-shop-category-list", text: "CEILING SPEAKERS" },
-        { img: "Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg", alt: "202", link: "/hifi-shop-category-list", text: "TVS" },
-        { img: "Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg", alt: "302", link: "/hifi-shop-category-list", text: "VINYL LPS" }
+        { img: "public/bf029828-229a-4482-9eae-32be26ef58cd.jpg", alt: "debut", link: "/hifi-shop-category-list", text: "SHOP BY BRAND" },
+        { img: "public/amplifiers.jpg", alt: "creek", link: "/hifi-shop-category-list?category=amplifiers", text: "AMPLIFIERS" },
+        { img: "public/beskaaret.jpg", text: "SPEAKERS" },
+        { img: "public/f2c4d551-8e3d-4ad3-a4db-321e54c9a6f0.jpg", alt: "mahi1", link: "/hifi-shop-category-list?category=turntables", text: "TURNTABLES" },
+        { img: "public/e17bb5a8-0d1b-4226-bcc0-d84df7347004.jpg", alt: "neoclassic300b", link: "/hifi-shop-category-list?category=cd-players", text: "CD PLAYERS" },
+        { img: "public/7f02750d-5e2f-401b-acd2-e20e83e6f304.jpg", alt: "haloa23", link: "/hifi-shop-category-list?category=streamers", text: "STREAMERS" },
+        { img: "public/1aec6810-830d-4780-ab2a-c018203b7e2c.jpg", alt: "creekclassic", link: "/hifi-shop-category-list?category=cables", text: "CABLES" },
+        { img: "public/bf029828-229a-4482-9eae-32be26ef58cd.jpg", alt: "snapper", link: "/hifi-shop-category-list?category=furniture", text: "FURNITURE" },
+        { img: "public/headphones.jpg", alt: "epos", link: "/hifi-shop-category-list?category=headphones", text: "HEADPHONES" },
+        { img: "public/homecinema.jpg", alt: "p3es2", link: "/hifi-shop-category-list", text: "HOME CINEMA" },
+        { img: "public/96127d43-21d2-417b-ac99-6fece1243ee2.jpg", alt: "evo", link: "/hifi-shop-category-list", text: "OUTLET - SAVE UP TO 50%" },
+        { img: "public/c8778ea2-cbe9-47d5-ae8f-9ae54114cd70.jpg", alt: "m5", link: "/hifi-shop-category-list", text: "EBAY SHOP" },
+        { img: "public/56a71763-8d9f-4303-9fb6-869876c36714.jpg", alt: "rpm5", link: "/hifi-shop-category-list", text: "CEILING SPEAKERS" },
+        { img: "public/d8111856-9128-443a-9320-afb9900a2090.jpg", alt: "202", link: "/hifi-shop-category-list", text: "TVS" },
+        { img: "public/0c5a771b-9ea8-40b4-b996-a14c7a563bc2.jpg", alt: "302", link: "/hifi-shop-category-list", text: "VINYL LPS" }
     ];
 
     return (
