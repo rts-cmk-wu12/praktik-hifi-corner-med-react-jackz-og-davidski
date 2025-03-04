@@ -3,6 +3,7 @@ import SmallNavBar from "../componets/smallnavbar"
 import NavBar from "../componets/navbar"
 import Footer from "../componets/footer"
 
+
 function HifiShopFrontpage() {
     return (
         <div>
