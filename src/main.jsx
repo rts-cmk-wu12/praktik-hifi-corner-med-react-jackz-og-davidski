@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from './pages/App.jsx'
 import Test from './pages/test.jsx'
 import HifiShopFrontpage from "./pages/hifi-shop-frontpage.jsx";
+import BrandList from "./pages/brand-list.jsx";
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/hifi-shop-frontpage",
     element: <HifiShopFrontpage />
+  },
+  {
+    path: "/Brandlist",
+    element: <BrandList />
   }
   // ,
   // {
