@@ -31,28 +31,28 @@
     ],
     "speakers": [
         {
-            "id": 1,
+            "id": 5,
             "photo": "Produktbilleder/hojtalere/boesendorfer_vcs_wall.gif",
             "name": "Klipsch RP600M",
             "price": "2500",
             "manufacturer": "Klipsch"
         },
         {
-            "id": 2,
+            "id": 6,
             "photo": "Produktbilleder/hojtalere/epos_m5.gif",
             "name": "Bowers & Wilkins 606",
             "price": "3000",
             "manufacturer": "Bowers & Wilkins"
         },
         {
-            "id": 3,
+            "id": 7,
             "photo": "Produktbilleder/hojtalere/harbeth_monitor30.jpg",
             "name": "KEF Q350",
             "price": "3200",
             "manufacturer": "KEF"
         },
         {
-            "id": 4,
+            "id": 8,
             "photo": "Produktbilleder/hojtalere/harbeth_p3es2.jpg",
             "name": "ELAC Debut 2.0",
             "price": "2800",
@@ -61,35 +61,35 @@
     ],
     "turntables": [
         {
-            "id": 1,
+            "id": 9,
             "photo": "Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
             "name": "Pro-Ject Debut III",
             "price": "2000",
             "manufacturer": "Pro-Ject"
         },
         {
-            "id": 2,
+            "id": 10,
             "photo": "Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
             "name": "Audio-Technica AT-LP120XUSB",
             "price": "2500",
             "manufacturer": "Audio-Technica"
         },
         {
-            "id": 3,
+            "id": 11,
             "photo": "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
             "name": "Thorens TD 202",
             "price": "3200",
             "manufacturer": "Thorens"
         },
         {
-            "id": 4,
+            "id": 12,
             "photo": "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
             "name": "Rega Planar 2",
             "price": "2800",
             "manufacturer": "Rega"
         },
         {
-            "id": 5,
+            "id": 13,
             "name": "Rega Planar 2",
             "price": "3500",
             "manufacturer": "Rega",
@@ -98,28 +98,28 @@
     ],
     "cd-players": [
         {
-            "id": 1,
+            "id": 14,
             "photo": "Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
             "name": "Marantz CD6007",
             "price": "3000",
             "manufacturer": "Marantz"
         },
         {
-            "id": 2,
+            "id": 15,
             "photo": "Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
             "name": "Cambridge Audio CXC",
             "price": "3500",
             "manufacturer": "Cambridge Audio"
         },
         {
-            "id": 3,
+            "id": 16,
             "photo": "Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
             "name": "Denon DCD-800NE",
             "price": "4000",
             "manufacturer": "Denon"
         },
         {
-            "id": 4,
+            "id": 17,
             "photo": "Produktbilleder/cd_afspillere/Exp_2010S_CD.gif",
             "name": "Sony CD3000",
             "price": "2500",
@@ -128,28 +128,28 @@
     ],
     "dvd-afspiller": [
         {
-            "id": 1,
+            "id": 18,
             "photo": "Produktbilleder/dvdafspillere/creek_classic.jpg",
             "name": "Pioneer DV-420V",
             "price": "1200",
             "manufacturer": "Pioneer"
         },
         {
-            "id": 2,
+            "id": 19,
             "photo": "Produktbilleder/dvdafspillere/exposure_2010S.jpg",
             "name": "Sony DVP-SR760H",
             "price": "800",
             "manufacturer": "Sony"
         },
         {
-            "id": 3,
+            "id": 20,
             "photo": "Produktbilleder/dvdafspillere/parasound_d200.jpg",
             "name": "Samsung DVD-E360",
             "price": "900",
             "manufacturer": "Samsung"
         },
         {
-            "id": 4,
+            "id": 21,
             "photo": "Produktbilleder/dvdafspillere/parasound_halod3.jpg",
             "name": "LG DVX582H",
             "price": "1100",
@@ -158,28 +158,28 @@
     ],
     "effektforstaerkere": [
         {
-            "id": 1,
+            "id": 22,
             "photo": "Produktbilleder/effektforstaerkere/manley_mahi.jpg",
             "name": "Marantz MM7025",
             "price": "6500",
             "manufacturer": "Marantz"
         },
         {
-            "id": 2,
+            "id": 23,
             "photo": "Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
             "name": "Rotel RB-1590",
             "price": "10000",
             "manufacturer": "Rotel"
         },
         {
-            "id": 3,
+            "id": 24,
             "photo": "Produktbilleder/effektforstaerkere/manley_snapper.jpg",
             "name": "NAD C275BEE",
             "price": "7000",
             "manufacturer": "NAD"
         },
         {
-            "id": 4,
+            "id": 25,
             "photo": "Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
             "name": "Emotiva XPA-2",
             "price": "8500",
@@ -188,28 +188,28 @@
     ],
     "int-forstaerkere": [
         {
-            "id": 1,
+            "id": 26,
             "photo": "Produktbilleder/int_forstaerkere/creek_a50I.jpg",
             "name": "Yamaha A-S801",
             "price": "6000",
             "manufacturer": "Yamaha"
         },
         {
-            "id": 2,
+            "id": 27,
             "photo": "Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
             "name": "NAD C368",
             "price": "7500",
             "manufacturer": "NAD"
         },
         {
-            "id": 3,
+            "id": 28,
             "photo": "Produktbilleder/int_forstaerkere/manley_snapper.jpg",
             "name": "Cambridge Audio CXA61",
             "price": "9000",
             "manufacturer": "Cambridge Audio"
         },
         {
-            "id": 4,
+            "id": 29,
             "photo": "Produktbilleder/int_forstaerkere/manley_snapper.jpg",
             "name": "Rega Brio",
             "price": "5000",
@@ -218,28 +218,28 @@
     ],
     "roser-forstaerkere": [
         {
-            "id": 1,
+            "id": 30,
             "photo": "Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
             "name": "Roser AMP-101",
             "price": "5500",
             "manufacturer": "Roser"
         },
         {
-            "id": 2,
+            "id": 31,
             "photo": "Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
             "name": "Roser AMP-202",
             "price": "7000",
             "manufacturer": "Roser"
         },
         {
-            "id": 3,
+            "id": 32,
             "photo": "Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
             "name": "Roser AMP-303",
             "price": "9000",
             "manufacturer": "Roser"
         },
         {
-            "id": 4,
+            "id": 33,
             "photo": "Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
             "name": "Roser AMP-404",
             "price": "10000",
