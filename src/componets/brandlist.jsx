@@ -55,7 +55,7 @@ const BrandList = () => {
                       <IoMdMail   className="fa-solid fa-location-dot header_div_items"/>
                     </div>
                 </div>
-                <nav>
+                <nav className='nav'>
                     <ul className="nav_bar">
                         <li><a className="nav_bar_item" href="Forside.html">home</a></li>
                         <li><a className="nav_bar_item" href="">about us</a></li>
