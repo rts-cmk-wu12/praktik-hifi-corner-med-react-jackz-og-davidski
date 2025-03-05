@@ -6,6 +6,7 @@ import App from './pages/App.jsx'
 import Test from './pages/test.jsx'
 import HifiShopFrontpage from "./pages/hifi-shop-frontpage.jsx";
 import BrandList from "./pages/brand-list.jsx";
+import HifiShopCategoryList from "./pages/hifi-shop-category-list";
 
 
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/Brandlist",
     element: <BrandList />
+  },
+  {
+    path: "/hifi-shop-category-list",
+    element: <HifiShopCategoryList />
   }
   // ,
   // {

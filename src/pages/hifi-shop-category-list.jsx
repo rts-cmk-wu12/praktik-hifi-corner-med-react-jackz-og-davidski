@@ -1,10 +1,9 @@
-import HifiShopList from "../componets/hifi-shop-list"
+import HifiShopList from "../componets/hifi-shop-list";
 
 function HifiShopCategoryList() {
     return (
         <div>
             <HifiShopList />
-
         </div>
     );
 }
