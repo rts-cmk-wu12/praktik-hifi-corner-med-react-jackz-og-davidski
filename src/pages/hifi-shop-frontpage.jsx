@@ -8,10 +8,10 @@ function HifiShopFrontpage() {
         <div className="'black">
             <SmallNavBar />
             <NavBar />
-            <main>
-                <ShopFrontImages />
-                <Footer />
-            </main>
+
+            <ShopFrontImages />
+            <Footer />
+
         </div>
     );
 }
