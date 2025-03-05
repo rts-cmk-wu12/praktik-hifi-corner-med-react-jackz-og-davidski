@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../style/shop-category-list.scss";
 
 export default function HifiShopList() {
@@ -29,12 +29,12 @@ export default function HifiShopList() {
             <h1>Hifi Shop</h1>
             <ul>
                 {products.map((product) => (
-                    <li key={product.id}>
+                  <Link to={`/details/${product.id}`}>  <li key={product.id}>
                         <img src={product.photo} alt={product.name} />
                         <h2>{product.name}</h2>
                         <p>Pris: {product.price} DKK</p>
                         <p>Mærke: {product.manufacturer}</p>
-                    </li>
+                    </li></Link>
                 ))}
             </ul>
         </div>
