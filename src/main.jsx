@@ -7,6 +7,7 @@ import Test from './pages/test.jsx'
 import HifiShopFrontpage from "./pages/hifi-shop-frontpage.jsx";
 import BrandList from "./pages/brand-list.jsx";
 import HifiShopCategoryList from "./pages/hifi-shop-category-list";
+import Details from "./pages/Details.jsx";
 
 
 
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
   {
     path: "/hifi-shop-category-list",
     element: <HifiShopCategoryList />
+  }, {
+    path: "/details/:id",
+    element: <Details />
   }
   // ,
   // {
@@ -78,8 +82,7 @@ const router = createBrowserRouter([
 
   // {
   //   //vi definere vores details side path 
-  //   path: "/details/:id",
-  //   element: <Details />
+
   // },
   // {
 
