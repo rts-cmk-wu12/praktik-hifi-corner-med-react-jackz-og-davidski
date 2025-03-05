@@ -1,8 +1,7 @@
 import React from 'react';
 import "../style/brandlist.scss";
-import { FaLocationDot, FaMagnifyingGlass } from 'react-icons/fa6';
-import { FaPhone, FaShoppingCart, FaUser } from 'react-icons/fa';
-import { IoMdMail } from 'react-icons/io';
+import BrandNav from './brand-nav';
+
 
 const brands = [
     { src: "brandlist_logo/arcam_logo.svg", alt: "arcam_logo" },
@@ -31,42 +30,7 @@ const BrandList = () => {
         <div className="background">
             <div className="backdrop">
 
-                <div className="header__top">
-                    <img src="/hifilogo.jpg" alt="logo" />
-                    <div className="header_div">
-                        <form action="newsletter.html" method="get">
-                            <label className="form__label" htmlFor="email"></label>
-                            <input
-                                className="navform"
-                                type="text"
-                                id="email"
-                                name="search"
-                                placeholder="Search entire store here"
-                            />  <FaMagnifyingGlass
-                                className="magnify header_div_items" />
-                          
-                        </form>
-                        <FaUser className="fa-solid fa-user"/>
-                        <a className="header_div_items" href="">account</a>
-                        <FaShoppingCart  className="fa-solid fa-cart-shopping"/>
-                        <a className="header_div_items" href="cart.html">cart</a>
-                      <FaLocationDot  className="fa-solid fa-location-dot header_div_items"/>
-                      <FaPhone  className="fa-solid fa-location-dot header_div_items"/>
-                      <IoMdMail   className="fa-solid fa-location-dot header_div_items"/>
-                    </div>
-                </div>
-                <nav className='nav'>
-                    <ul className="nav_bar">
-                        <li><a className="nav_bar_item" href="Forside.html">home</a></li>
-                        <li><a className="nav_bar_item" href="">about us</a></li>
-                        <li><a className="nav_bar_item highlight" href="brandlist.html">brands</a></li>
-                        <li><a className="nav_bar_item" href="">blog</a></li>
-                        <li><a className="nav_bar_item" href="">events</a></li>
-                        <li><a className="nav_bar_item" href="shop-frontpage.html">shop</a></li>
-                        <li><a className="nav_bar_item" href="">contact us</a></li>
-                    </ul>
-                </nav>
-
+                <BrandNav/>
                 <main id="main" className="main">
                     <div className="main_wrapper">
                         <div className="main_top">
