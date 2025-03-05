@@ -1,3 +1,4 @@
+import BrandNav from "../componets/brand-nav"
 import Brandlist from "../componets/brandlist"
 import Footer from "../componets/footer"
 
@@ -20,6 +21,7 @@ function BrandList() {
            
             
             <main>
+         
                 <Brandlist />
             </main>
             <Footer />
