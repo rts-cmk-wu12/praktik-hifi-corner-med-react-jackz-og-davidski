@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../style/shop-category-list.scss";
 
 export default function HifiShopList() {
     const [products, setProducts] = useState([]);
-    const [sortOption, setSortOption] = useState(""); // State for sortering
+    const [allProducts, setAllProducts] = useState({});
+    const [sortOption, setSortOption] = useState("");
     const location = useLocation();
     const navigate = useNavigate();
+
+
     const searchParams = new URLSearchParams(location.search);
     const category = searchParams.get("category");
 
@@ -14,20 +17,22 @@ export default function HifiShopList() {
         fetch("/db.json")
             .then((response) => response.json())
             .then((data) => {
-                let fetchedProducts = [];
+                setAllProducts(data);
                 if (category) {
-                    if (data[category] && data[category].length > 0) {
-                        fetchedProducts = data[category];
-                    }
+                    setProducts(data[category] || []);
                 } else {
-                    fetchedProducts = Object.values(data).flat();
+                    setProducts(Object.values(data).flat());
                 }
-                setProducts(fetchedProducts);
             })
             .catch((error) => console.error("Fejl ved hentning:", error));
-    }, [category, navigate]);
+    }, [category]);
 
-    // Funktion til at sortere produkter baseret på den valgte option
+
+    const handleCategoryClick = (newCategory) => {
+        navigate(newCategory ? `/hifi-shop-category-list?category=${newCategory}` : "/hifi-shop-category-list");
+    };
+
+
     const handleSort = (option) => {
         let sortedProducts = [...products];
         if (option === "price-asc") {
@@ -39,43 +44,55 @@ export default function HifiShopList() {
         } else if (option === "name-desc") {
             sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
         }
+        setSortOption(option);
         setProducts(sortedProducts);
-    };
-
-    // Håndter ændring af sorteringsoption
-    const handleChangeSort = (e) => {
-        setSortOption(e.target.value);
-        handleSort(e.target.value);
     };
 
     return (
         <div className="shop-category-list">
-            <h1>Hifi Shop</h1>
+            <aside className="category-menu">
+                <h2>Kategorier</h2>
+                <ul>
+                    <li onClick={() => handleCategoryClick("")} className={!category ? "active" : ""}>Alle</li>
+                    <li onClick={() => handleCategoryClick("amplifiers")} className={category === "amplifiers" ? "active" : ""}>Amplifiers</li>
+                    <li onClick={() => handleCategoryClick("speakers")} className={category === "speakers" ? "active" : ""}>Speakers</li>
+                    <li onClick={() => handleCategoryClick("turntables")} className={category === "turntables" ? "active" : ""}>Turntables</li>
+                    <li onClick={() => handleCategoryClick("cd-players")} className={category === "cd-players" ? "active" : ""}>CD Players</li>
+                    <li onClick={() => handleCategoryClick("dvd-afspiller")} className={category === "dvd-afspiller" ? "active" : ""}>DVD Players</li>
+                    <li onClick={() => handleCategoryClick("effektforstaerkere")} className={category === "effektforstaerkere" ? "active" : ""}>Power Amplifiers</li>
+                    <li onClick={() => handleCategoryClick("int-forstaerkere")} className={category === "int-forstaerkere" ? "active" : ""}>Integrated Amplifiers</li>
+                    <li onClick={() => handleCategoryClick("roser-forstaerkere")} className={category === "roser-forstaerkere" ? "active" : ""}>Tube Amplifiers</li>
+                </ul>
+            </aside>
 
-            {/* Sorteringsboks */}
-            <div className="category_sort_box">
-                <p>SORT BY</p>
-                <select value={sortOption} onChange={handleChangeSort}>
-                    <option value="">Select Sort Option</option>
-                    <option value="price-asc">Price: Low to High</option>
-                    <option value="price-desc">Price: High to Low</option>
-                    <option value="name-asc">Name: A to Z</option>
-                    <option value="name-desc">Name: Z to A</option>
-                </select>
-            </div>
+            <main>
+                <h1>Hifi Shop</h1>
+                <div className="category_sort_box">
+                    <p>SORT BY</p>
+                    <select value={sortOption} onChange={(e) => handleSort(e.target.value)}>
+                        <option value="">Select Sort Option</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
 
-            <ul>
-                {products.map((product) => (
-                    <Link key={product.id} to={`/details/${product.id}`}>
-                        <li>
-                            <img src={product.photo} alt={product.name} />
-                            <h2>{product.name}</h2>
-                            <p>Pris: {product.price} DKK</p>
-                            <p>Mærke: {product.manufacturer}</p>
-                        </li>
-                    </Link>
-                ))}
-            </ul>
+                <ul className="product-list">
+                    {products.length > 0 ? (
+                        products.map((product) => (
+                            <li key={product.id}>
+                                <img src={product.photo} alt={product.name} />
+                                <h2>{product.name}</h2>
+                                <p>Pris: {product.price} DKK</p>
+                                <p>Mærke: {product.manufacturer}</p>
+                            </li>
+                        ))
+                    ) : (
+                        <p>Ingen produkter fundet i denne kategori.</p>
+                    )}
+                </ul>
+            </main>
         </div>
     );
 }
