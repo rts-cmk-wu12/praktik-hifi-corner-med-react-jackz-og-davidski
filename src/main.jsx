@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     element: <HifiShopFrontpage />
   },
   {
-    path: "/Brandlist",
+    path: "/brand-list",
     element: <BrandList />
   },
   {

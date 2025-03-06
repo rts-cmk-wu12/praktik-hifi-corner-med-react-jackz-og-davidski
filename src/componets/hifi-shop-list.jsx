@@ -28,7 +28,7 @@ export default function HifiShopList() {
             .catch((error) => console.error("Fejl ved hentning:", error));
     }, [category]);
 
-    // Håndter sortering af produkter
+
     const handleSort = (option) => {
         let sortedProducts = [...products];
         if (option === "price-asc") {
@@ -49,7 +49,7 @@ export default function HifiShopList() {
         handleSort(e.target.value);
     };
 
-    // Navigering til kategori
+
     const handleCategoryClick = (newCategory) => {
         navigate(newCategory ? `/hifi-shop-category-list?category=${newCategory}` : "/hifi-shop-category-list");
     };
