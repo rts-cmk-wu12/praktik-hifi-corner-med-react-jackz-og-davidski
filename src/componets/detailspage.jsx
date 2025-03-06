@@ -29,9 +29,9 @@ export default function DetailsAgents() {
     return (
         <div className="hundred">
             <div class="product-category-location" id="product-category-location">
-            <Link to="/"className="shop__frontpage__gallery__section__link"><p>HOME /</p></Link>
-            <Link to={`/hifi-shop-category-list?category/${product.category}`}className="shop__frontpage__gallery__section__link"><p>HOME /</p></Link>
-            <Link to={product.link}className="shop__frontpage__gallery__section__link">HOME /</Link>
+            <Link to="/"className="shop__frontpage__gallery__section__link">{"HOMe/ "}</Link>
+            <Link to={`/hifi-shop-category-list?category=${product.category}`}className="shop__frontpage__gallery__section__link">{product.category+" / "}</Link>
+            <Link to={product.link}className="shop__frontpage__gallery__section__link">{product.name}/</Link>
             </div>
             <img src="/sale_img.png" alt="sale" class="product_category_commersial-img"></img>
             <section className="details__section">
