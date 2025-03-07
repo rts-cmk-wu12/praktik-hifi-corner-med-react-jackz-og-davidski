@@ -3,6 +3,12 @@ import { createRoot } from 'react-dom/client'
 import { GloabelContext } from "./globalContext";
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from './pages/App.jsx'
+import Test from './pages/test.jsx'
+import HifiShopFrontpage from "./pages/hifi-shop-frontpage.jsx";
+import BrandList from "./pages/brand-list.jsx";
+import HifiShopCategoryList from "./pages/hifi-shop-category-list";
+import Details from "./pages/Details.jsx";
+
 
 
 
@@ -21,7 +27,27 @@ import App from './pages/App.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />}
+    element: <App />
+  },
+  {
+    path: "/test",
+    element: <Test />
+  },
+  {
+    path: "/hifi-shop-frontpage",
+    element: <HifiShopFrontpage />
+  },
+  {
+    path: "/brand-list",
+    element: <BrandList />
+  },
+  {
+    path: "/hifi-shop-category-list",
+    element: <HifiShopCategoryList />
+  }, {
+    path: "/details/:id",
+    element: <Details />
+  }
   // ,
   // {
   //   path: "/PropertyList",
@@ -52,12 +78,11 @@ const router = createBrowserRouter([
   //   path: "/login",
   //   element: <Login />, // Tilføj login-siden her
   // }
-  
-  
+
+
   // {
   //   //vi definere vores details side path 
-  //   path: "/details/:id",
-  //   element: <Details />
+
   // },
   // {
 
