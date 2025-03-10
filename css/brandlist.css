@@ -1,0 +1,149 @@
+.background {
+  background-image: url(/public/speaker.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+@media screen and (max-width: 588px) {
+  .background {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.backdrop {
+  background-color: rgba(3, 53, 9, 0.522);
+  height: 100vh;
+}
+
+.main_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.main_top img {
+  height: 9rem;
+  width: auto;
+  transition: 0.3s;
+}
+.main_top img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 588px) {
+  .main_top img {
+    display: none;
+  }
+}
+.main_top > h1 {
+  color: white;
+}
+
+.main_bottom .container-white {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: flex;
+  margin: 1rem 0;
+}
+@media screen and (max-width: 588px) {
+  .main_bottom .container-white {
+    padding: 0;
+  }
+}
+.main_bottom .container-gradiant {
+  background-color: black;
+  width: 50%;
+  padding: 0.5rem;
+}
+.main_bottom .container-width {
+  width: 80%;
+}
+.main_bottom .container-width p {
+  color: var(--primary_hihglight);
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
+}
+.main_bottom .container-photo {
+  width: 50%;
+  background-image: url(/public/speaker_closeup_one.avif);
+  padding: 0.5rem;
+}
+.main_bottom .container-photo h2 {
+  color: var(--primary_hihglight);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.main_bottom .container-photo p {
+  color: white;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+}
+.main_bottom .container-photo a {
+  color: var(--primary_hihglight);
+  font-size: 0.5rem;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 1rem;
+  width: auto;
+  margin: 0.25rem;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  footer, .header__top {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+}
+@media screen and (max-width: 588px) {
+  nav {
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    z-index: 10;
+    padding-top: 4%;
+  }
+  nav ul {
+    display: none;
+    justify-items: center;
+    width: 100vw;
+    margin-bottom: 34em;
+    height: 100vh;
+  }
+  nav ul li {
+    grid-column: 1/-1;
+    height: 0;
+  }
+  #xmark-nav {
+    display: grid;
+    position: fixed;
+    top: 5vw;
+    right: 5vw;
+    font-size: 2em;
+    z-index: 40;
+    color: orange;
+  }
+  .main_top {
+    display: block;
+    margin-top: 0;
+  }
+  .backdrop, .background {
+    padding: 0;
+  }
+  .main_bottom .container-white {
+    padding: 0;
+  }
+}/*# sourceMappingURL=brandlist.css.map */
